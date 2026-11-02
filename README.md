@@ -1,66 +1,44 @@
-# Система управления заявками на закупку материалов
+# frontend
 
-## Информация о студенте
+This template should help get you started developing with Vue 3 in Vite.
 
-**ФИО:** Абдуллина Алия Илдаровна  
-**Группа:** ТРИС-3-23
+## Recommended IDE Setup
 
-## Тема проекта
+[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
 
-Разработка информационной системы управления заявками на закупку материалов.
+## Recommended Browser Setup
 
-## Технологический стек
+- Chromium-based browsers (Chrome, Edge, Brave, etc.):
+  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
+- Firefox:
+  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
+  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
 
-- **Frontend:** Vue 3
-- **Backend:** ASP.NET Core
-- **База данных:** PostgreSQL
+## Customize configuration
 
----
+See [Vite Configuration Reference](https://vite.dev/config/).
 
-## Лабораторная работа №1 — Требования к системе
+## Project Setup
 
-В рамках первой лабораторной работы сформулированы требования к разрабатываемой информационной системе, определены основные сценарии работы пользователей и правила обработки заявок на закупку материалов.
-
-Документы ЛР1:
-
-- [Проектное предложение](docs/project-proposal.md)
-- [Требования к системе](docs/lab-01-requirements.md)
-
-### Основные сценарии работы
-
-1. **Создание заявки.** Сотрудник отдела снабжения создаёт заявку, указывая заголовок, материал и описание. После создания заявке присваивается номер и устанавливается статус `New`.
-2. **Назначение исполнителя.** Сотрудник отдела снабжения или руководитель отдела снабжения назначает специалиста по закупкам. При назначении статус заявки не меняется автоматически и может оставаться `New`.
-3. **Изменение статуса.** Назначенный специалист может перевести только свою заявку из статуса `New` в `InProgress`. Другие пользователи не могут выполнять это действие.
-
----
-
-## Лабораторная работа №2 — Архитектура и модель данных
-
-Проектные документы: схема узлов системы, сущности и связи, договор о будущем API, связь требований ЛР1 с моделью и запросами..
-
-Документы ЛР2:
-
-- [Архитектура](docs/architecture.md)
-- [Модель данных и ER-диаграмма](docs/data-model.md)
-- [Контракт API](docs/api-contract.md)
-- [Матрица требований](docs/requirements-matrix.md)
-
----
-
-## Лабораторная работа №3 — Vue: каркас и экраны
-
-Клиент на Vue 3 и JavaScript находится в папке `frontend`. В нём три экрана: список заявок, создание заявки и вход. Экраны переключаются кнопками в шапке. Записи в списке демонстрационные, формы являются макетами: данные не сохраняются и никуда не отправляются.
-
-Отчёт: [ЛР3](docs/reports/lab-03.md)
-
-### Запуск клиента
-
-Нужен Node.js версии LTS.
-
-```bash
-cd frontend
+```sh
 npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
 npm run dev
 ```
 
-Открыть адрес Vite, обычно `http://localhost:5173`.
+### Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
