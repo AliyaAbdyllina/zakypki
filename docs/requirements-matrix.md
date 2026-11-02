@@ -6,7 +6,7 @@
 
 ## 1. Три критерия приёмки
 
-| Требование ЛР1 | Поле или сущность | Запрос | Критерий |
+| Требование | Поле или сущность | Запрос | Критерий |
 |---|---|---|---|
 | Создать объект | `PurchaseRequest`: `title`, `materialId`, `description`, `id`, `number`, `status` | `POST /api/purchase-requests` | 1 |
 | Назначить исполнителя | `PurchaseRequest.assigneeUserId` → `User.id` | `PATCH /api/purchase-requests/{id}/assignee` | 2 |
@@ -44,7 +44,7 @@
 
 ## 2. Функциональные требования
 
-Эта таблица подтверждает, что для каждого требования ЛР1 есть место в модели и API. Запросы `GET /api/materials` и `GET /api/users?role=PurchasingSpecialist` вспомогательные и не входят в обязательный минимум методички. Правила, которых нет в ЛР1 напрямую, отмечены как проектные решения в [`data-model.md`](data-model.md) и [`api-contract.md`](api-contract.md).
+Эта таблица подтверждает, что для каждого требования есть место в модели и API. Запросы `GET /api/materials` и `GET /api/users?role=PurchasingSpecialist` вспомогательные и не входят в обязательный минимум методички. Правила, которых нет в ЛР1 , отмечены как проектные решения в [`data-model.md`](data-model.md) и [`api-contract.md`](api-contract.md).
 
 | Требование | Поле или сущность | Запрос |
 |---|---|---|
